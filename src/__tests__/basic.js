@@ -1,4 +1,4 @@
-import CalculateHealth from "../character"
+import calculateHealth from "../character"
 
 test.each ([
     
@@ -6,7 +6,7 @@ test.each ([
     [{ name: 'маг', health: 20 }, 'wounded'],
     [{ name: 'лучник', health: 80 }, 'healthy'],
 ])
-('testing CalculateHealth function %s with %i health percentages', (player, expected) => {
-    const result = CalculateHealth(player);
-    expect(result).toBe(expected);
+('testing calculateHealth function %s with %i health percentages', (player, expected) => {
+    const result = calculateHealth(player);
+    expect(result).toBe(expected); 
 })
